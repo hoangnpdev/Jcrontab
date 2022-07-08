@@ -1,0 +1,6 @@
+# type | ss mm hh dd DD mm | cmd
+bash | 30 * * * * * | cmd
+
+# scp cmd: pwd source (child_file|child_directory) destination(parent_directory)+child_name (mkdirIfNotExist)
+# url format: user@ip:/
+scp | 30 * * * * * | scp aaa aa%s  df%s | params
